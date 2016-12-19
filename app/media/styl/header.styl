@@ -1,0 +1,187 @@
+.baol-index-page
+	display flex 
+	align-items center
+
+.baol-logo-responsive
+	margin 0 auto 
+	display block
+	max-width 85%
+
+.baol-header__menu
+	background #171717
+	position fixed
+	z-index 1
+	
+.baol-header__menu-list
+	display flex
+	align-items center
+	padding 0 25px
+	transition .3s ease-out
+	
+.baol-header__menu-item
+	text-align center
+	padding 0 5px
+
+.baol-header__logo
+	padding-top 85px
+
+.baol-nav-top 
+	display flex
+	justify-content space-between
+	align-items center
+
+.baol-header__menu-author
+	display flex 
+	align-items center
+	padding 0 2%
+
+.baol-header__menu-author h2
+	color #fff
+	font-family HelveticaRegular
+	font-size 10px
+	text-transform uppercase
+	letter-spacing 6px
+	line-height 14px
+	padding 3px 20px 0px
+
+.baol-header__menu-author img 
+	width 60px
+
+.baol-header__menu-link
+	font-family HelveticaRegular
+	font-size 17px
+	text-transform uppercase
+	font-weight 400
+	position relative
+	padding 0 17px
+	letter-spacing 3px
+	color #fff
+	&:before 
+		content ""
+		width 0%
+		height 1px
+		background rgba(255, 255, 255, 0.5)
+		position absolute
+		top 5px
+		left -2px
+		transition .3s ease-out
+	&:hover:before
+		width 100%
+	&:hover
+		color #fff
+
+.baol-header__menu-span 
+	font-family HelveticaRegular
+	font-size 17px
+	text-transform uppercase
+	font-weight 400
+	position relative
+	padding 0 17px
+	letter-spacing 3px
+	color #fff
+	&:before 
+		content ""
+		width 100%
+		height 1px
+		background rgba(255, 255, 255, 0.5)
+		position absolute
+		top 5px
+		left -2px
+
+.baol-header-menu
+	padding 25px 2%
+	display flex 
+	align-items center 
+	justify-content space-between
+	transition .2s
+	
+.baol-header-menu__fa
+	display none 
+	
+.baol-lang-menu
+	display flex 
+	padding 0 2%
+	align-items center 
+	justify-content space-between
+	
+.baol-lang-menu__item a
+	padding 0 7px
+	color #fff
+	font-family HelveticaRegular
+	font-size 13px
+	letter-spacing 3px
+	position relative
+	line-height 35px
+	margin 0 5px
+	&:before 
+		content ""
+		width 0%
+		height 1px
+		background rgba(255, 255, 255, 0.5)
+		position absolute
+		top 4px
+		left -2px
+		transition .3s ease-out
+	&:hover:before
+		width 100%
+	&:hover
+		color #fff
+	
+.baol-lang-menu__item span 
+	padding 0 7px
+	color #fff
+	font-family HelveticaRegular
+	font-size 13px
+	letter-spacing 3px
+	position relative
+	line-height 35px
+	margin 0 5px
+	&:before
+		content ""
+		width 100%
+		height 1px
+		background rgba(255, 255, 255, 0.5)
+		position absolute
+		top 4px
+		left -2px
+	
+@media (max-width: 768px)
+	.baol-header__menu-list
+		position absolute
+		display flex
+		transition 1s
+		top -200%
+		padding 0
+		flex-wrap wrap
+		width 100%
+		left 0
+		z-index -2
+
+	.baol-header-menu__fa
+		display block
+		color #fff
+		margin 0 20px
+		cursor pointer
+		font-size 28px
+		width 25px
+		height 19px
+		background-repeat no-repeat
+		background-image url('../img/menu.png')
+
+	.baol-header__menu-item
+		background #171717
+		width 100%
+		padding 20px 0
+		margin 1px 0 0
+		
+	.baol-menu-slide
+		top 100%
+		
+	.baol-nav-top:before
+		position absolute
+		width 100%
+		height 100%
+		content ""
+		background #171717
+		z-index -1
+		

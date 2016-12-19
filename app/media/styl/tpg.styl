@@ -1,0 +1,51 @@
+.baol-main-block
+	margin-bottom 20px
+	display flex
+	align-items center
+
+.baol-title-container_h2
+	font-family RobotoSlab
+	font-size 35px
+	margin 0 0 40px
+	letter-spacing 1px
+	text-transform uppercase
+	
+.baol-title-container p 
+	color #303334
+	font-family RobotoThin
+	font-size 16px
+	line-height 27px
+	margin 0
+	letter-spacing 1px
+
+.baol-main-block__outer
+	text-align center
+
+.baol-logo-responsive-tpg
+	width 250px
+
+.baol-main-block__outer-images
+	position relative 
+	&:before 
+		width 100px
+		position absolute
+		height 2px
+		background #000
+		content ""
+		right -130px
+		top -45px
+		
+.baol-index-page__title
+	margin 40px 0 i	
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.baol-main-block__outer
+		display none
+
+@media (min-width: 768px) and (max-width: 991px)
+	.baol-main-block__outer
+		display none
+		
+@media (max-width: 767px)
+	.baol-main-block__outer
+		display none

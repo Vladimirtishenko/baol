@@ -1,0 +1,97 @@
+.baol-main-about__description h2 
+	text-align center
+
+.baol-main-about__description p, 
+.baol-main-about__description p b, 
+.baol-main-about__description p i,
+.baol-main-about__description p strong
+	font-size 16px
+	font-family RobotoLight
+	letter-spacing 1px 
+	line-height 23px
+	margin 20px 0
+
+.baol-hgroup-title-outer
+	margin 130px auto 60px
+	text-align center
+
+.baol-title-container-about
+	font-family RobotoSlabLight
+	font-size 44px
+	letter-spacing 3px 
+	position relative
+	padding 0 30px
+	text-transform uppercase
+	display inline-block
+	margin 0 auto
+	&:before
+		position absolute
+		width 100%
+		left 0 
+		top 24px 
+		content ""
+		background #000
+		height 2px
+	
+.baol-main-about__rect-top
+	width 400px
+	height 350px
+	border 6px solid #171717
+	margin 0 auto 
+	display flex 
+	float none
+	align-items center
+	
+.baol-main-about__rect-top-small
+	width 300px
+	height 300px
+	border 6px solid #171717
+	margin 0 auto 
+	float none
+	display flex 
+	align-items center
+	
+.baol-reverse .baol-main-about__rect-top
+	float left i
+	
+.baol-main-about__rect-top img
+	position relative 
+	left -50px
+	
+.baol-reverse .baol-main-about__rect-top img 
+	left 30px i
+	
+.baol-about-cycle-of
+	font-family HelveticaBlack
+	font-size 45px 
+	background #fff
+	color #171717
+	position relative 
+	left -100px
+	padding 20px 0
+
+.baol-column-reverse
+	display flex
+	flex-wrap wrap
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.baol-main-about__rect-top, .baol-main-about__rect-top-small
+		float right
+
+@media (min-width: 768px) and (max-width: 991px)
+	.baol-main-about
+		margin-bottom 40px
+		
+	.baol-column-reverse
+		flex-direction column-reverse
+
+@media (max-width: 767px)
+	.baol-main-about__rect-top
+		width 100% 
+		min-width 250px	
+	
+	.baol-main-about
+		margin-bottom 40px
+
+	.baol-column-reverse
+		flex-direction column-reverse

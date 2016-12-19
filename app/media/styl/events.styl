@@ -1,0 +1,323 @@
+.baol-main-events__outer
+	position relative
+
+.baol-main-events__item-big-reverse
+	display flex
+	flex-wrap wrap
+	flex-direction row-reverse
+
+.baol-main-events__item-small, .baol-main-events__item-big-reverse
+	margin-bottom 40px
+	
+.baol-main-events__item-big
+	margin-bottom 80px
+
+.baol-main-events__text-block
+	height auto 
+	
+.baol-main-events__item-big .baol-main-events__text-block
+	padding-left 105px
+	
+.baol-main-events__item-big-reverse .baol-main-events__text-block
+	padding-right 90px
+
+.baol-main-events__text-block p 
+	font-family RobotoLight
+	font-size 16px
+	letter-spacing 1px
+	line-height 24px
+	
+.baol-main-events-slice-round
+	position absolute
+	height 100%
+	width 75%
+	background rgba(255,255,255, .8)
+	left 65%
+	top 0
+	display flex
+	align-items center
+	padding 0 45% 0 9%
+	border-radius 50%
+	justify-content center
+	flex-wrap wrap
+
+.baol-main-events__item-big-reverse .baol-main-events-slice-round 
+	left -40% i
+	padding 0 5% 0 45% 
+
+.baol-main-events__h3 
+	padding-bottom 15px
+	font-family RobotoSlabLight
+	font-size 18px
+	text-transform uppercase
+	
+.baol-main-events__p
+	width 100%
+	font-family RobotoLight
+	line-height 20px
+	
+.baol-main-events__data
+	width 150px 
+	height 150px
+	justify-content center
+	display flex
+	align-items center
+	position absolute
+	bottom 0px 
+	right -75px
+	border-radius 50%
+	background #171717
+	padding 0 20px
+
+.baol-main-events__item-big-reverse .baol-main-events__data
+	right 0px i
+	left -75px
+	
+.baol-main-events__data span 
+	color #fff
+	text-align center
+	font-size 20px
+	letter-spacing 1px
+	line-height 27px
+	text-transform uppercase
+	font-family RobotoSlab
+
+.baol-main-events__outer-small-image
+	position relative
+	
+.baol-main-events__data-small
+	width 100px 
+	height 100px
+	justify-content center
+	display flex
+	align-items center
+	position absolute
+	bottom 2px 
+	right -5px
+	border-radius 50%
+	background #fff
+	padding 0 5px
+	&:before
+		content ""
+		width 102px
+		height 104px
+		border-radius 100%
+		background #000
+		position absolute
+		right -2px
+		z-index -1
+		clip rect(0,104px,104px,50px)
+	
+.baol-main-events__data-small span 
+	color #171717
+	text-align center
+	font-size 16px
+	letter-spacing 1px
+	line-height 22px
+	text-transform uppercase
+	font-family RobotoSlab
+	
+.baol-main-events__outer-small-text
+	padding 25px 40px 0 20px
+	
+.pagination
+	display table
+	padding-left 0
+	margin 20px auto 60px
+	border-radius 0px
+
+.pagination > li > a, .pagination > li > span
+	color #171717
+	background transparent
+	margin 0 10px
+	border none
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover,.pagination > .active > a:focus, .pagination > .active > span:focus
+	border-radius 50%
+	background #171717
+	color #fff
+	border none
+	
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus
+	border-radius 50%
+	background rgba(0,0,0, .3)
+	color #fff
+
+
+.baol-image-static
+	width 240px
+	height 240px
+	overflow hidden
+	background-size auto 100%
+	background-position 50% 50%
+	
+.baol-image-static-big
+	height 425px
+	overflow hidden
+	background-size auto 100%
+	background-position 50% 50%
+
+.baol-image-static-big img 
+	height 100%
+	z-index -1
+	position relative
+
+.baol-image-static img 
+	height 100%
+	z-index -1
+	position relative
+	
+.baol-mobile-date, .baol-main-events-slice-round__only-responsive
+	display none
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.baol-main-events__text-block
+		height 340px
+		overflow hidden
+		
+	.baol-main-events__data
+		width 100px
+		height 100px
+		right -50px
+		
+	.baol-image-static-big
+		height 365px
+	
+	.baol-main-events__data span
+		color #fff
+		text-align center
+		font-size 12px
+		letter-spacing 1px
+		line-height 20px
+		text-transform uppercase
+		font-family RobotoSlab
+		
+	.baol-main-events-slice-round
+		width 90%
+		left 56%
+		
+	.baol-image-static
+		width 220px
+		height 220px
+	
+	.baol-main-events__data-small
+		width 70px
+		height 70px
+		bottom -35px
+		left 50%
+		right initial
+		margin-left -28px
+		&:before
+			content ""
+			width 74px
+			height 74px
+			right -2px
+			clip auto
+			
+	.baol-main-events__data-small span
+		font-size 11px 
+		line-height 16px
+
+	.baol-main-events__outer-small-text
+		padding 5px 20px 0 20px
+		
+	.baol-main-events__item-big .baol-main-events__text-block
+		padding-left 75px
+		
+	.baol-main-events__item-big-reverse .baol-main-events__data
+		left -50px
+		
+@media (min-width: 768px) and (max-width: 991px)
+
+	.baol-image-static
+		width 330px
+		height 330px
+		
+	.baol-main-events__item-big
+		margin-bottom 40px
+		
+	.baol-main-events__data-small
+		right -18px
+		
+	.baol-image-static-big
+		height 485px
+		width 100%
+		position relative
+	
+	.baol-main-events__item-big-reverse .baol-main-events__text-block
+		padding 30px 0 0 20px
+		
+	.baol-main-events__item-big .baol-main-events__text-block
+		padding 30px 0 0 20px
+		
+@media (max-width: 768px)
+	.baol-main-events__item-big .baol-main-events__text-block
+		padding 20px 15px
+		
+	.baol-main-events__item-big
+		margin-bottom 20px
+		
+	
+	.baol-main-events-slice-round
+		display none
+
+	.baol-mobile-date
+		display block
+		font-family RobotoSlab
+		letter-spacing 2px
+		text-transform uppercase
+		padding 30px 0 0 0
+		font-size 12px
+		
+	.baol-main-events-slice-round__only-responsive
+		display block
+		padding 30px 0 0
+		
+	.baol-helper__only-responsive
+		display flex 
+		align-items center 
+		justify-content space-between
+		padding 25px 0 0 0
+		
+	.baol-mobile-date, .baol-main-events__h3
+		padding 20px 0px 0
+		
+	.baol-image-static-big img, .baol-image-static img
+		width 100% 
+		height initial
+		
+	.baol-image-static, .baol-image-static-big
+		width auto
+		height auto
+		
+	.baol-main-events__outer-small-text
+		padding 25px 0
+		
+	.baol-main-events__data-small, .baol-main-events__data
+		width 90px
+		height 90px
+		bottom -45px
+		left 50%
+		right inherit
+		border-radius 50%
+		margin-left -50px
+		background #fff
+		padding 0 5px
+		&:before
+			content ""
+			width 94px
+			height 94px
+			border-radius 100%
+			background #000
+			position absolute
+			right -2px
+			z-index -1
+			clip auto
+			
+	.baol-margin-text
+		margin-top 20px
+		
+	.baol-main-events__data-small span, .baol-main-events__data span
+		font-size 13px
+		color #000
+		line-height 22px
